@@ -1,6 +1,6 @@
 # aureliaDockerBuild
 
-##USAGE
+## USAGE
 
 1. clone repo
 2. Create an Access Token via your Github account > settings
