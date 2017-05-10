@@ -1,4 +1,0 @@
-export class Sponsors{
-  constructor(){
-  }
-}
