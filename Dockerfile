@@ -6,7 +6,7 @@ RUN npm install -g jspm
 RUN apt-get -y install git
 RUN npm install aurelia-cli -g
 RUN npm install gulp-cli -g
-RUN jspm config registries.github.auth cf336f32c8a9716abe211f913479d7c3994628b0 
+RUN jspm config registries.github.auth [YOUR GITHUB TOKEN]
 RUN jspm install -y
 
 # Setup the script to run on startup
