@@ -1,12 +1,14 @@
 
 FROM node:6.1.0
 MAINTAINER	Webnostix code@webnostix.co.uk
+ARG TOKEN
+
 
 RUN npm install -g jspm
 RUN apt-get -y install git
 RUN npm install aurelia-cli -g
 RUN npm install gulp-cli -g
-RUN jspm config registries.github.auth [YOUR GITHUB TOKEN]
+RUN jspm config registries.github.auth $TOKEN
 RUN jspm install -y
 
 # Setup the script to run on startup
